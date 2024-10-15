@@ -31,11 +31,11 @@ const Main = () => {
             <div className="main-container">
                 {!showResult ? (
                     <>
-                        <div className="greet">
-                            <p><span>Hello, Dev.</span></p>
-                            <p>How can I help you today?</p>
+                        <div className="greet" style={{ marginTop: "-35px"}}>
+                            <p style={{marginLeft:"-72%"}}><span>Hello, Dev.</span></p>
+                            <p style={{marginLeft:"-34%"}}>How can I help you today?</p>
                         </div>
-                        <div className="cards">
+                        <div className="cards" style={{marginTop:"-80px"}}>
                             <div className="card">
                                 <p>Suggest beautiful places to see on an upcoming road trip</p>
                                 <img src={assets.compass_icon} alt="Compass Icon" />
@@ -92,7 +92,7 @@ const Main = () => {
                                 onClick={handleSend}  // Use the handleSend function
                                 style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
                             >
-                               {input ?<img src={assets.send_icon} alt="Send Icon" />:null} 
+                                {input ? <img src={assets.send_icon} alt="Send Icon" /> : null}
                             </button>
                         </div>
                     </div>
